@@ -14,72 +14,6 @@ async function do_exam(_0xf0b499) {
     }
     return _0x4a84c5[0x1];
   }
-
-  // Função para exibir o Toast personalizado
-  function showToast(message, duration = 5000) {
-    const toast = document.createElement('div');
-    toast.classList.add('toast');
-    toast.innerHTML = `
-      <span>${message}</span>
-      <div class="progress-bar"></div>
-    `;
-    document.body.appendChild(toast);
-
-    setTimeout(() => {
-      toast.classList.add('show');
-    }, 100);
-
-    const progressBar = toast.querySelector('.progress-bar');
-    let progress = 0;
-    const interval = setInterval(() => {
-      progress += 2;
-      progressBar.style.width = `${progress}%`;
-
-      if (progress >= 100) {
-        clearInterval(interval);
-        setTimeout(() => {
-          toast.classList.remove('show');
-          setTimeout(() => {
-            toast.remove();
-          }, 500);
-        }, 1000);
-      }
-    }, duration / 50);
-  }
-
-  // CSS para o Toast
-  const style = document.createElement('style');
-  style.innerHTML = `
-    .toast {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: linear-gradient(45deg, #800080, #000000);
-      color: white;
-      padding: 15px;
-      border-radius: 10px;
-      font-size: 16px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      opacity: 0;
-      transition: opacity 0.5s ease;
-      z-index: 1000;
-    }
-    .toast.show {
-      opacity: 1;
-    }
-    .toast .progress-bar {
-      width: 100%;
-      height: 5px;
-      background-color: #3498db;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-  `;
-  document.head.appendChild(style);
-
   async function _0x24ca13() {
     try {
       const _0x49622f = await fetch(_0xf0b499, {
@@ -104,7 +38,6 @@ async function do_exam(_0xf0b499) {
       throw _0x52a489;
     }
   }
-
   async function _0x1f3e35(_0x413231, _0x565082) {
     try {
       const _0x1bf2cc = new URLSearchParams();
@@ -136,7 +69,6 @@ async function do_exam(_0xf0b499) {
       throw _0x610b62;
     }
   }
-
   async function _0x26949c(_0x3679ae) {
     try {
       const _0x4892a6 = await fetch(_0x3679ae, {
@@ -195,7 +127,6 @@ async function do_exam(_0xf0b499) {
       throw _0x36c9f8;
     }
   }
-
   async function _0x45303d(_0x506f6f, _0x3cde8c) {
     try {
       const _0x3f3a0c = Math.floor(Math.random() * _0x506f6f.options.length);
@@ -231,7 +162,6 @@ async function do_exam(_0xf0b499) {
       throw _0x1159f6;
     }
   }
-
   async function _0x161475(_0x5ae35f, _0x3afc5e, _0x1ab783) {
     try {
       const _0x524717 = "https://expansao.educacao.sp.gov.br/mod/quiz/summary.php?attempt=" + _0x5ae35f + "&cmid=" + _0x3afc5e;
@@ -266,7 +196,6 @@ async function do_exam(_0xf0b499) {
       throw _0x50701b;
     }
   }
-
   try {
     const {
       sessKey: _0x539287
@@ -285,7 +214,6 @@ async function do_exam(_0xf0b499) {
     throw _0x47f5b0;
   }
 }
-
 async function marcarPaginaComoConcluida(_0x3c8d5e) {
   try {
     await fetch("https://expansao.educacao.sp.gov.br/mod/resource/view.php?id=" + _0x3c8d5e, {
@@ -304,16 +232,15 @@ async function marcarPaginaComoConcluida(_0x3c8d5e) {
     });
   } catch (_0xbb019d) {}
 }
-
 async function verificarPaginas() {
-  showToast("Script made by marcos10pc | discord.gg/platformdestroyer", 5000); // Substituindo o alert por showToast
+  alert("https://discord.gg/XEmByJ5v");
   const _0x593ebc = document.createElement("div");
   _0x593ebc.style.cssText = "position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 9999;";
   const _0x3f9d00 = document.createElement("div");
-  _0x3f9d00.style.cssText = "border: 16px solid #f3f3f3; border-radius: 50%; border-top: 16px solid #3498db; width: 120px; height: 120px; animation: spin 2s linear infinite; margin-bottom: 20px;";
+  _0x3f9d00.style.cssText = "border: 16px solidrgb(0, 0, 0); border-radius: 50%; border-top: 16px solid #800080; width: 120px; height: 120px; animation: spin 2s linear infinite; margin-bottom: 20px; background: linear-gradient(45deg, #800080, #000000);";
   const _0x2c6108 = document.createElement("div");
   _0x2c6108.style.cssText = "color: white; font-size: 24px; font-weight: bold; text-align: center;";
-  _0x2c6108.innerText = "Processando atividades...";
+  _0x2c6108.innerText = "Fazendo atividades...";
   const _0x2c7fd7 = document.createElement("div");
   _0x2c7fd7.style.cssText = "color: white; font-size: 18px; margin-top: 10px;";
   const _0x4be9e7 = document.createElement("style");
@@ -350,7 +277,7 @@ async function verificarPaginas() {
   const _0x4d5c65 = _0x250c6c.length;
   for (let _0x1f71e6 = 0x0; _0x1f71e6 < _0x4d5c65; _0x1f71e6++) {
     const _0x2ed740 = _0x250c6c[_0x1f71e6];
-    _0x2c7fd7.innerText = "Processando exame " + (_0x1f71e6 + 0x1) + '/' + _0x4d5c65 + ": \"" + _0x2ed740.nome + "\"";
+    _0x2c7fd7.innerText = "Atividade Sendo Realizada: " + (_0x1f71e6 + 0x1) + '/' + _0x4d5c65 + ": \"" + _0x2ed740.nome + "\"";
     try {
       await do_exam(_0x2ed740.href);
     } catch (_0x21481b) {}
@@ -359,7 +286,7 @@ async function verificarPaginas() {
     }
   }
   document.body.removeChild(_0x593ebc);
-  showToast("Atividades Finalizadas! | Caso Sobrar alguma execute denovo", 5000); // Substituindo alert por showToast
+  alert("Atividades Concluidas ✅, Execute denovo para processar as outras.");
   location.reload();
 }
 verificarPaginas();
