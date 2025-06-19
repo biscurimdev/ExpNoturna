@@ -233,7 +233,7 @@ async function marcarPaginaComoConcluida(_0x3c8d5e) {
   } catch (_0xbb019d) {}
 }
 async function verificarPaginas() {
-  alert("https://discord.gg/XEmByJ5v");
+  alert("📚 MoonScripts Exp Noturna | Clique Prosseguir 📚  ");
   const _0x593ebc = document.createElement("div");
   _0x593ebc.style.cssText = "position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 9999;";
   const _0x3f9d00 = document.createElement("div");
@@ -286,7 +286,7 @@ async function verificarPaginas() {
     }
   }
   document.body.removeChild(_0x593ebc);
-  alert("Atividades Concluidas ✅, Execute denovo para processar as outras.");
+  alert("Atividades Concluidas ✅, Execute denovo para processar as outras. ✅");
   location.reload();
 }
 verificarPaginas();
