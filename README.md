@@ -11,6 +11,10 @@
 - 📖 **Automatização de Tarefas**: Automatiza tarefas e integra com plataformas educacionais para facilitar a realização de atividades acadêmicas.
 - 📖 **Gestão de Atividades**: Permite ao usuário visualizar, gerenciar e concluir suas tarefas de forma eficiente e sem complicação.
 
+## Tutorial
+
+- 📖 **Como fazer?**: entre na atividade/curso, execute o bookmarklet espere ser concluido!
+
 
 ## Bookmarklet
 
